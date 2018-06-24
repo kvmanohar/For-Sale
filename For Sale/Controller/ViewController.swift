@@ -16,9 +16,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+//        FIRDatabaseService.shared.post(parameters: ["title":"Hot shirt", "cost":"14.00"], to: .products)
+        FIRDatabaseService.shared.observe(.products) { (snapshot) in
+            guard let productsSnapshot = ProductSnapshot(snapshot: snapshot) else { return }
+            print(productsSnapshot)
+        }
+        
     }
     @IBAction func onAddTapped(_ sender: Any) {
+        
         AlertService.addProductAlert(in: self) { (product) in
             self.products.append(product)
             self.collectionView.reloadData()

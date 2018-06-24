@@ -18,6 +18,7 @@
 		CE70105B20DE4D4E009FCAE6 /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70105A20DE4D4E009FCAE6 /* UNService.swift */; };
 		CE70105E20DECFE1009FCAE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE70105D20DECFE1009FCAE6 /* GoogleService-Info.plist */; };
 		CEE7578920DED330004C33CF /* FIRDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7578820DED330004C33CF /* FIRDatabaseService.swift */; };
+		CEE7578B20DEF272004C33CF /* ProductsSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7578A20DEF272004C33CF /* ProductsSnapshot.swift */; };
 		F42E0A4B6D79DBE0F0F5726A /* Pods_For_Sale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80561E621229A7A48CE2E446 /* Pods_For_Sale.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		CE70105C20DE50DB009FCAE6 /* For Sale.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "For Sale.entitlements"; sourceTree = "<group>"; };
 		CE70105D20DECFE1009FCAE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEE7578820DED330004C33CF /* FIRDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseService.swift; sourceTree = "<group>"; };
+		CEE7578A20DEF272004C33CF /* ProductsSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSnapshot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				CE70105420DD8F50009FCAE6 /* Product.swift */,
+				CEE7578A20DEF272004C33CF /* ProductsSnapshot.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				CE70104120DD8B76009FCAE6 /* ViewController.swift in Sources */,
 				CE70105720DD8FAD009FCAE6 /* ProductCell.swift in Sources */,
 				CE70103F20DD8B76009FCAE6 /* AppDelegate.swift in Sources */,
+				CEE7578B20DEF272004C33CF /* ProductsSnapshot.swift in Sources */,
 				CE70105520DD8F50009FCAE6 /* Product.swift in Sources */,
 				CE70105920DD93C4009FCAE6 /* AlertService.swift in Sources */,
 			);
