@@ -17,6 +17,7 @@
 		CE70105920DD93C4009FCAE6 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70105820DD93C4009FCAE6 /* AlertService.swift */; };
 		CE70105B20DE4D4E009FCAE6 /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70105A20DE4D4E009FCAE6 /* UNService.swift */; };
 		CE70105E20DECFE1009FCAE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE70105D20DECFE1009FCAE6 /* GoogleService-Info.plist */; };
+		CEDB0D8220E175CC0069E70A /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB0D8120E175CC0069E70A /* ProductsService.swift */; };
 		CEE7578920DED330004C33CF /* FIRDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7578820DED330004C33CF /* FIRDatabaseService.swift */; };
 		CEE7578B20DEF272004C33CF /* ProductsSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7578A20DEF272004C33CF /* ProductsSnapshot.swift */; };
 		F42E0A4B6D79DBE0F0F5726A /* Pods_For_Sale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80561E621229A7A48CE2E446 /* Pods_For_Sale.framework */; };
@@ -39,6 +40,7 @@
 		CE70105A20DE4D4E009FCAE6 /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
 		CE70105C20DE50DB009FCAE6 /* For Sale.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "For Sale.entitlements"; sourceTree = "<group>"; };
 		CE70105D20DECFE1009FCAE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEDB0D8120E175CC0069E70A /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
 		CEE7578820DED330004C33CF /* FIRDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseService.swift; sourceTree = "<group>"; };
 		CEE7578A20DEF272004C33CF /* ProductsSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSnapshot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 				CE70105820DD93C4009FCAE6 /* AlertService.swift */,
 				CE70105A20DE4D4E009FCAE6 /* UNService.swift */,
 				CEE7578820DED330004C33CF /* FIRDatabaseService.swift */,
+				CEDB0D8120E175CC0069E70A /* ProductsService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				CEE7578B20DEF272004C33CF /* ProductsSnapshot.swift in Sources */,
 				CE70105520DD8F50009FCAE6 /* Product.swift in Sources */,
 				CE70105920DD93C4009FCAE6 /* AlertService.swift in Sources */,
+				CEDB0D8220E175CC0069E70A /* ProductsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

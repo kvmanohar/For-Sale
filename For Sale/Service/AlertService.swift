@@ -21,7 +21,7 @@ class AlertService{
         
         alert.addTextField { (priceTF) in
             priceTF.placeholder = "Price"
-            priceTF.keyboardType = .numberPad
+            priceTF.keyboardType = .numbersAndPunctuation
         }
         
         let send = UIAlertAction(title: "Send", style: .default) { (_) in

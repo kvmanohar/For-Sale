@@ -16,18 +16,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        FIRDatabaseService.shared.post(parameters: ["title":"Hot shirt", "cost":"14.00"], to: .products)
-        FIRDatabaseService.shared.observe(.products) { (snapshot) in
-            guard let productsSnapshot = ProductSnapshot(snapshot: snapshot) else { return }
-            print(productsSnapshot)
-        }
+        ProductsService.shared.delegate = self
+        ProductsService.shared.observerProducts()
         
     }
     @IBAction func onAddTapped(_ sender: Any) {
         
         AlertService.addProductAlert(in: self) { (product) in
-            self.products.append(product)
-            self.collectionView.reloadData()
+            ProductsService.shared.post(product: product)
         }
     }
     
@@ -53,7 +49,6 @@ extension ViewController: UICollectionViewDataSource{
             else {
             return UICollectionViewCell()
         }
-        
         let product = products[indexPath.item]
         cell.configure(with: product)
         return cell
@@ -61,3 +56,10 @@ extension ViewController: UICollectionViewDataSource{
     
 }
 
+
+extension ViewController: ProductsServiceDelegate {
+    func didChange(products: [Product]) {
+        self.products = products
+        collectionView.reloadData()
+    }
+}

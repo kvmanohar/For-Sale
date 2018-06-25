@@ -19,7 +19,7 @@ struct Product {
     
     init?(valueDict: [String: Any]){
         guard let title = valueDict["title"] as? String,
-            let cost = Double(valueDict["cost"] as! String)
+            let cost = valueDict["cost"] as? Double
             else {
                 return nil
         }
@@ -30,5 +30,13 @@ struct Product {
     func price() -> String{
         let costString = String(format: "%.2f",cost)
       return "£" + costString
+    }
+    
+    
+    func parameters() -> [String: Any]{
+        let dict: [String: Any] = ["title": title,
+                                   "cost": cost]
+        
+        return dict
     }
 }
